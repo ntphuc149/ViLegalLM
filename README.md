@@ -101,15 +101,24 @@ All fine-tuning code is provided as Jupyter Notebooks in `Source codes/Fine-tuni
 
 ```
 ViLegalLM/
-└── Source codes/
-    ├── Pre-training ViLegalLM/     # Pre-training scripts and configs
-    │   ├── ViLegalBERT/            # MLM pre-training (PhoBERT-based)
-    │   └── ViLegalQwen/            # CLM pre-training (Qwen-based)
-    └── Fine-tuning ViLegalLM/      # Fine-tuning notebooks (.ipynb)
-        ├── Information Retrieval
-        ├── Question Answering      # True/False, MCQ, Extractive, Abstractive
-        ├── Natural Language Inference
-        └── Syllogism Reasoning
+├── Source codes/
+│   ├── Pre-training ViLegalLM/     # Pre-training scripts and configs
+│   │   ├── ViLegalBERT/            # MLM pre-training (PhoBERT-based)
+│   │   └── ViLegalQwen/            # CLM pre-training (Qwen-based)
+│   └── Fine-tuning ViLegalLM/      # Fine-tuning notebooks (.ipynb)
+│       ├── Information Retrieval/
+│       ├── Question Answering/
+│       │   ├── TrueFalse/
+│       │   ├── Multiple-choice/
+│       │   ├── Multiple-choice Legal Knowledge/
+│       │   ├── Extractive QA/
+│       │   └── Abstractive QA/
+│       ├── Natural Language Inference/
+│       └── Syllogism Reasoning/
+└── Datasets/                       # Synthetics datasets
+    ├── ViLegalTF/
+    ├── ViLegalMCQ/
+    └── ViLegalNLI/
 ```
 
 ---
